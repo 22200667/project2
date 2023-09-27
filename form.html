@@ -5,11 +5,14 @@
 
 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
+    <fieldset>
+        <legend>Name:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
 </form>
 
 <form>
@@ -21,16 +24,23 @@
   <label for="vehicle3"> I have a boat</label>
 </form>
 <label for="cars">Choose your nationality:</label>
-<select id="cars" name="cars">
-  <option value="k">korea</option>
-  <option value="j">japan</option>
-  <option value="c">china</option>
-  <option value="a">america</option>
-</select><br>
+<select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select><br>
 <textarea name="message" rows="10" cols="30">
 Explain about yourself.
 </textarea>
-
+<form>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+  </form>
 <form>
   <input type="radio" id="html" name="fav_language" value="HTML">
   <label for="html">HTML</label><br>
